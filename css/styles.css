@@ -1,0 +1,116 @@
+:root {
+  --primary: hsl(322, 100%, 66%);
+  --light: hsl(192, 100%, 96%);
+  --dark: hsl(192, 100%, 9%);
+  --secondary: hsl(208, 11%, 55%);
+  --font-size: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+  :root {
+    --font-size: 1.125rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: 0;
+}
+
+*, input, button {
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: calc(2 * var(--font-size));
+}
+
+body {
+  color: var(--secondary);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 72rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding-top: calc(8 * var(--font-size));
+  padding-bottom: calc(8 * var(--font-size));
+  background-color: var(--light);
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--dark);
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: calc(4 * var(--font-size));
+  text-align: center;
+}
+
+@media only screen and (min-width: 772px) {
+  .header__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: calc(1 * var(--font-size));
+}
+
+@media only screen and (min-width: 772px) {
+  .header__image {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
