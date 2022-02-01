@@ -1,0 +1,21 @@
+.button {
+  @include add-shadow;
+
+  display: inline-block;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 2rem;
+
+  &--small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  &--primary {
+    background-color: var(--primary);
+    color: #fff;
+  }
+}
